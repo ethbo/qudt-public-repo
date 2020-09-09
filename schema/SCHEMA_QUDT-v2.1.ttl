@@ -531,9 +531,10 @@ qudt:Discipline
 .
 qudt:DoublePrecisionEncoding
   a qudt:FloatingPointEncodingType ;
-  qudt:bytes 64 ;
+  qudt:bits 64 ;
+  qudt:bytes 8 ;
   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
-  rdfs:label "Single Precision Real Encoding" ;
+  rdfs:label "Double Precision Real Encoding" ;
 .
 qudt:Encoding
   a owl:Class ;
@@ -687,7 +688,8 @@ qudt:FloatingPointEncodingType
 .
 qudt:IEEE754_1985RealEncoding
   a qudt:FloatingPointEncodingType ;
-  qudt:bytes 32 ;
+  qudt:bits 32 ;
+  qudt:bytes 4 ;
   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
   rdfs:label "IEEE 754 1985 Real Encoding" ;
 .
@@ -1423,7 +1425,8 @@ qudt:SignednessType
 .
 qudt:SinglePrecisionRealEncoding
   a qudt:FloatingPointEncodingType ;
-  qudt:bytes 32 ;
+  qudt:bits 32 ;
+  qudt:bytes 4 ;
   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
   rdfs:label "Single Precision Real Encoding" ;
 .
@@ -1612,12 +1615,13 @@ qudt:UNSIGNED
 .
 qudt:UTF16-StringEncoding
   a qudt:StringEncodingType ;
+  qudt:bytes 4 ;
   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
   rdfs:label "UTF-16 String" ;
 .
 qudt:UTF8-StringEncoding
   a qudt:StringEncodingType ;
-  qudt:bytes 8 ;
+  qudt:bytes 4 ;
   rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
   rdfs:label "UTF-8 Encoding" ;
 .
